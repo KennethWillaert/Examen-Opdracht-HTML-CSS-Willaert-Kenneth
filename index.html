@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen taak developer course</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      --primary: #002c89;
+    }
+    header {
+      color: white;
+      padding: 50px 20px;
+      position: relative;
+    }
+    header h3 {
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: 600;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 118%;
+      text-transform: capitalize;
+    }
+    header h2 {
+      opacity: 0.7;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 16px;
+      font-family: manrope;
+    }
+    header button {
+      background-color: var(--primary);
+    }
+    #banner {
+      width: 100%;
+      margin-top: 36px;
+    }
+    #button-wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+    button {
+      border: none;
+      color: white;
+      padding: 15px 110px 15px 110px;
+      border-radius: 4px;
+      margin-top: 34px;
+      font-family: Manrope;
+      font-size: 15px;
+    }
+    #background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: contain, cover;
+      background-image: url("Final Files/Final Files/Assets/Backgounds/BG -mobile.png");
+    }
+    #button-wrapper-desktop {
+      display: none;
+    }
+    main h1 {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+      color: #21455f;
+      padding: 10px 20px;
+    }
+    main h2 {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      color: #32363e;
+      opacity: 0.7;
+      padding: 10px 20px;
+      
+    }
+    main h3 {
+      position: absolute;
+      display: inline-block;
+      text-transform: capitalize;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      color: black;
+      padding: 22px 10px;
+    }
+    #paragraph-one {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 575;
+      font-size: 16px;
+      line-height: 157.5%;
+      letter-spacing: -0.015em;
+      color: #292d32;
+      padding: 20px;
+    }
+    #icons {
+      padding-bottom: 10px;
+    }
+    #icons-wrapper {
+      padding: 20px;
+    }
+    #checkbox {
+      display: inline-block;
+      position: absolute;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      padding-left: 10px;
+    }
+    #checkbox-wrapper{
+      padding: 20px;
+    }
+    main button {
+      background-color: var(--primary);
+    }
+    #button-wrapper-two {
+      padding: 0px 20px 0px 20px;
+    }
+    #button-two {
+      padding: 20px 80px 20px 80px;
+      margin-bottom: 34px;
+    }
+    #react-developer-background{
+      background-color: rgba(102, 218, 249, 0.17);
+    }
+    #react-developer-title {
+      padding-top: 50px;
+    }
+    #react-developer-quote {
+      font-family: 'Poppins';
+      font-style: italic;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 157.5%;
+      letter-spacing: -0.015em;
+      color: #000000;
+
+    }
+    #paragraph-two {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 10px 28px 10px 21px;
+    }
+    #background-IDE-mobile{
+      width: 90%;
+      padding: 30px 0px 50px 35px;
+    }
+    #coding-bootcamp-title{
+      padding-top: 50px;
+      padding-bottom: 60px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+    }
+    #green-checkbox-two{
+      padding-left: 21px;
+    }
+    #paragraph-three{
+      margin: -25px 20px 30px 50px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+    }
+    #guywithbeardandlaptop{
+      width: 80%;
+      padding: 20px 20px 40px 40px;
+    }
+    #react-course-background{
+      background: #F9F9F9;
+      padding-bottom: 50px;
+    }
+    #react-course-background-title{
+      padding-top: 50px;
+      padding-bottom: 10px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%
+    }
+    #paragraph-four-title{
+      padding: 20px;
+      padding-bottom: 60px;
+      padding-right: 40px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    #paragraph-four{
+      margin: -25px 20px 30px 50px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    #Breakthrough-course-background{
+      background-color: #002C89;
+      padding-bottom: 90px;
+    }
+    #Breakthrough-course-background-title {
+      padding: 49px 19px 20px 21px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+      color: white;
+    }
+    #paragraph-five-title{
+      padding: 0px 40px 40px 21px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: white;
+      opacity: 0.9;
+    }
+    #paragraph-five {
+      margin: -25px 20px 26px 50px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      color: white;
+    }
+    #Breakthrough-course-background-two{
+      background-color: #00094C;
+      padding-bottom: 40px;
+    }
+    #paragraph-six {
+      font-family: 'Poppins';
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      padding: 30px 20px 0px 21px;
+      color: white;
+    }
+    #course-details-title{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+      text-align: center;
+      padding: 40px 20px 20px 21px;
+    }
+    #course-details-tile {
+      background: rgba(0, 98, 171, 0.03);
+      border: 2px solid #002C89;
+      box-sizing: border-box;
+      border-radius: 12px;
+      margin: 15px 21px 10px 24px;
+    }
+    #course-details-box{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+    }
+    #course-details {
+      color: #002C89 ;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 10px;
+      padding-top: 30px;   
+    }
+    #course-details-bis {
+      color: #002C89;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      padding-bottom: 20px;
+      opacity: 0.7;
+    }
+    #button-three{
+      display: flex;
+      background: #FFC702;
+      border-radius: 113px;
+      justify-content: center;
+      color: #FFFFFF;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      margin: 41px 0px 30px 110px;
+      padding: 11px 40px 10px 40px;
+    }
+    #course-details-bis-two {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      margin-left: 40px;
+      margin-right: 40px;
+      color: #004B5F;
+    }
+    #button-wrapper-four {
+      margin-left: 32px;
+      margin-bottom: 55px;
+    }
+    #requirements-background{
+      background-color: rgba(102, 218, 249, 0.17);
+      padding-bottom: 50px;
+    }
+    #requirements-title{
+      padding: 52px 20px 40px 20px;
+    }
+    #requirements-wrapper{
+      background: #002C89;
+      border-radius: 8px 8px 0px 0px;
+      margin: 0px 20px 0px 20px;
+    }
+    #requirements-paragraph{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 181%;
+      letter-spacing: -0.015em;
+      color: white;
+      padding: 36px 26px 42px 26px;
+    }
+    #requirements-wrapper-two{
+      background: #0062AB;
+      border-radius: 0px 0px 8px 8px;
+      margin: 0px 20px 0px 20px;
+      padding-bottom: 35px;
+    }
+    #requirements-paragraph-two{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 157.5%;
+      letter-spacing: -0.015em;
+      color: #FFFFFF;
+      padding: 36px 17px 0px 17px;
+    }
+    #exquisite-wrapper {
+      background: #002C89;
+      border: 3px solid #002C89;
+      border-radius: 12px 12px 0px 0px;
+      box-sizing: border-box;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #exquisite-wrapper-title {
+      color: white;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      padding: 25px 19px 24px 19px;
+    }
+    #exquisite-wrapper-paragraph{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.015em;
+      border: 3px solid #002C89;
+      border-radius: 0px 0px 12px 12px;
+      margin: 0px 20px 10px 20px;
+      color: #004B5F;
+      padding: 37px 15px 37px 15px;
+    }
+    #certified-coding-title{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+      color: #21455F;
+      margin-right: 50px;
+      padding-bottom: 20px;
+      margin-top: 60px;
+    }
+    #certified-coding-paragraph{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      color: #151617;
+      padding: 20px;
+    }
+    #certified-coding-title-two{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 157.5%;
+      letter-spacing: -0.015em;
+      color: #004B5F;
+      padding-left: 20px;
+    }
+    #certified-coding-wrapper{
+      background: #002C89;
+      border-radius: 8px;
+      margin: 6px 18px 6px 18px;
+    }
+    #certified-coding-wrapper-paragraph{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 157.5%;
+      letter-spacing: -0.015em;
+      color: #FFFFFF;
+      padding: 33px 17px 32px 17px
+    }
+    #certified-coding-paragraph-two{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 157.5%;
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #004B5F;
+      margin: 0px 27px 0px 26px;
+    }
+    #button-wrapper-five{
+      margin: 0px 20px 60px 20px;
+      text-align: center;
+    }
+    #button-five {
+      padding: 20px 70px 20px 70px;
+    } 
+    #contact-us-background{
+      background-color: #00094C;
+    }
+    #contact-us-title{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 110%;
+      color: #FFFFFF;
+      padding: 74px 20px 20px 21px;
+    }
+    #contact-us-paragraph{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      padding: 5px 25px 20px 19px;
+      opacity: 0.9;
+    }
+    #email-us-icon{
+      padding: 20px;
+    }
+    #contact-us-email{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      opacity: 0.7;
+      margin: -75px 50px 30px 80px;
+    }
+    #contact-us-email-contact{
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      opacity: 0.7;
+      margin: -37px 50px 30px 80px;
+    }
+    #ellipse{
+      z-index: 1;
+      padding: 20px;
+    }
+    #vector24{
+      display: none;
+    }
+    
+    @media screen and (min-width: 500px) {
+      #button-wrapper-desktop {
+        display: block;
+      }
+      #button-wrapper-desktop button {
+        background-color: white;
+        color: var(--primary);
+        padding: 13px 28px 13px 28px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+      }
+      #button-wrapper {
+        display: none;
+      }
+      header {
+        display: flex;
+        padding-left: 120px; 
+      }
+      #banner {
+        width: 52%;
+      }
+      header section {
+        width: 1440px;
+      }
+      header h1 {
+        font-size: 64px;
+      }
+      header h3{
+        padding-top: 125px;
+        padding-bottom: 50px;
+      }
+      #background {
+        background-image: url("Final Files/Final Files/Assets/Backgounds/BG.png");
+        height: 700px;
+        padding-left: 100px;
+        width: 100%;
+      }
+      main h1{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        max-width: 700px;
+        padding: 108px 87px 27px 120px;
+      }
+      main h2 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #32363E;
+        opacity: 0.7;
+        max-width: 700px;
+        padding: 0px 164px 44px 120px;
+      }
+      #icons-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-left: 120px;
+        flex-wrap: wrap;
+        max-height: 200px;
+        max-width: 500px;
+      }
+      #box-one{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 600px;
+        max-width: 100%
+      }
+      #paragraph-one{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 157.5%;
+        letter-spacing: -0.015em;
+        color: #292D32;
+        max-width: 400px;
+        margin-top: 120px;
+        border-left: 1px solid #E1E1E1;
+        padding-right: 150px;
+        margin-left: -100px;
+        padding-left: 50px;
+      }
+      #checkbox-wrapper{
+        border-left: 1px solid #E1E1E1;
+        margin-left: -100px;
+        padding-left: 50px;
+      }
+      #button-wrapper-two{
+        border-left: 1px solid #E1E1E1;
+        margin-left: -100px;
+        padding-left: 50px;
+        
+      }
+      #button-two{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        padding: 13px 28px 13px 28px ;
+      }
+      #react-developer-background{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 750px;
+        padding-bottom: 50px;
+
+      }
+      #react-developer-title{
+        max-width: 600px;
+      }
+      #react-developer-quote{
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 157.5%;
+        letter-spacing: -0.015em;
+        color: #000000;
+      }
+      #paragraph-two{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.7;
+        padding-left: 120px;
+        max-width: 700px;
+      }
+      #background-IDE-mobile{
+        max-width: 40%;
+      }
+      #coding-bootcamp-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #21455F;
+        max-width: 600px;
+      }
+      #green-checkbox-two{
+        padding-left: 120px;
+        
+        
+        
+      }
+      #paragraph-three{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.7;
+        padding-left: 120px;
+        max-width: 600px;
+      }
+      #guywithbeardandlaptop{
+        max-width: 40%;
+      }
+      #react-course-background-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #21455F;
+        padding-left: 240px;
+      }
+      #paragraph-four-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.7;
+        padding: 20px 244px 50px 240px;
+      }
+      #paragraph-four{
+        padding: 0px 233px 0px 277px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.7;
+        
+      }
+      #Breakthrough-course-background-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #FFFFFF;
+        padding: 112px 517px 50px 178px ;  
+      }
+      #paragraph-five-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        opacity: 0.8;
+        padding: 0px 161px 50px 178px;
+      }
+      #paragraph-five{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 0px 680px 20px 211px;
+      }
+      #paragraph-six{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 44px 174px 0px 174px;
+      }
+      #course-details-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #21455F;
+        padding: 50px 320px 20px 343px;
+      }
+      #box-three{
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 400px;
+        flex-direction: column;
+      }
+      #button-wrapper-three{
+        padding: 0px 623px 0px 620px;
+      }
+      #button-three{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 15px;
+      }
+      #course-details-bis-two{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #21455F;
+        padding: 0px 250px 0px 250px
+      }
+      #button-wrapper-four{
+        padding: 0px 558px 0px 558px;
+      }
+      #button-four{
+        padding: 30px 62px 30px 62px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+      #requirements-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #21455F;
+        padding: 127px 343px 50px 343px;
+        max-width: 800px;
+      }
+      #box-four{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 600px;
+        max-height: 200px;
+      }
+      #requirements-wrapper{
+        margin: 0px 0px 0px 120px;
+        border-radius: 8px 0px 0px 8px;
+        
+      }
+      #requirements-paragraph{
+        padding: 63px 44px 63px 52px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+      }
+      #requirements-wrapper-two{
+        border-radius: 0px 8px 8px 0px;
+        margin-left: 0px;
+        padding: 33px 32px 50px 40px;
+      }
+      #box-five{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 650px;
+        max-height: 550px;
+        padding-left: 100px;
+        padding-bottom: 100px;
+      }
+      #exquisite-wrapper{ 
+      }
+      #exquisite-wrapper-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 45px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 40px 94px 38px 69px;
+        margin: 0px;
+      }
+      #exquisite-wrapper-paragraph{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.8;
+        padding: 50px;
+      }
+      #certified-coding-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        color: #21455F;
+        padding: 0px 394px 10px 420px;
+      }
+      #certified-coding-paragraph{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #000000;
+        opacity: 0.7;
+        padding: 0px 193px 30px 193px;
+      }
+      #certified-coding-title-two{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        text-align: center;
+        color: #21455F;
+      }
+      #box-six{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 500px;
+        max-height: 250px;
+        margin-left: 100px;
+      }
+      #certified-coding-wrapper{
+        max-width: 600px;
+        
+      }
+      #certified-coding-wrapper-paragraph{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 30px 52px 29px 53px;
+        
+      }
+      #certified-coding-paragraph-two{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 140%;
+        text-align: center;
+        color: #21455F;
+        padding-top: 50px;
+      }
+      #button-five{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 31px 47px 30px 48px;
+        margin-bottom: 50px;
+      }
+      #contact-us-title{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-left: 120px;
+      }
+      #contact-us-paragraph{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-left: 120px;
+        margin-right: 708px;
+      }
+      #email-us-icon{
+        max-width: 15%;
+        max-height: 15%;
+        margin-left: 120px;
+      }
+      #contact-us-email{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-left: 200px;
+        padding-bottom: 5px;
+      }
+      #contact-us-email-contact{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-left: 200px;
+      }
+      #contact-us-background{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 750px;
+        padding-bottom: 50px;
+      }
+      #ellipse{
+        margin-left: -375px;
+        margin-bottom: -100px;
+        margin-top: 50px;
+        max-width: 40%;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <section>
+        <h3>Join This</h3>
+        <h1>Beginner-Friendly React Developer Course</h1>
+        <h2>With Certification and Become Financially Free</h2>
+        <div id="button-wrapper-desktop">
+          <button>Explore Course</button>
+        </div>
+      </section>
+      <img
+        id="banner"
+        src="./Final Files/Final Files/Assets/Images/Hero-main-img.svg"
+      />
+      <div id="button-wrapper">
+        <button>Explore Course</button>
+      </div>
+      <div id="background"></div>
+    </header>
+    <main>
+      <div id="box-one">
+      <h1>Get our best-suited React masterclass series</h1>
+      <h2>
+        Are you looking for a full-fledged front-end web development learning
+        opportunity exclusively designed for students?
+      </h2>
+      <section>
+        <div id="icons-wrapper">
+          <article id="icons">
+            <img
+              id="icons-one"
+              src="./Final Files/Final Files/Assets/Icons/user-friendly-icon.svg"
+            />
+            <h3>User-friendly</h3>
+          </article>
+          <article id="icons">
+            <img
+              id="icons-one"
+              src="./Final Files/Final Files/Assets/Icons/result-oriented-icon.svg"
+            />
+            <h3>Result-oriented</h3>
+          </article>
+          <article id="icons">
+            <img
+              id="icons-one"
+              src="./Final Files/Final Files/Assets/Icons/customized-icon.svg"
+            />
+            <h3>Customized</h3>
+          </article>
+          <article id="icons">
+            <img
+              id="icons-one"
+              src="./Final Files/Final Files/Assets/Icons/highly-depend-icon.svg"
+            />
+            <h3>Highly Dependable</h3>
+          </article>
+        </div>
+      </section>
+      <p id="paragraph-one">
+        Where YOU will Master the nitty-gritty of React Hooks, Context, Events,
+        Router, Redux, and much more in this 3-day Physical Course. It's time to
+        Land your Dream Job as a Front-end Developer, Start Earning, and Secure
+        YOUR Future.
+      </p>
+      <div id="checkbox-wrapper">
+        <section>
+          <article>
+            <img
+              id="green-checkbox"
+              src="./Final Files/Final Files/Assets/Icons/Vector24px.png"
+            />
+            <h4 id="checkbox">Accommodation included</h4>
+          </article>
+        </div>
+        <div id="button-wrapper-two">
+          <button id="button-two">GRAB YOUR ASSET HERE</button>
+        </div>
+        </section>
+      </div>
+      <section>
+        <div id="react-developer-background">
+        <h1 id="react-developer-title">Become a React Developer in 3 Days</h1>
+        <h2 id="react-developer-quote">Rule: The more you practice, the more you thrive</h2>
+        <p id="paragraph-two">React.JS has quickly topped the charts becoming the most popular javascript library since its release in 2011. If you don’t know how to use React to build applications, you risk getting obsolete.</p> 
+        <p id="paragraph-two">We know that it can be pretty annoying for first-timers to start learning React from the internet. Everyone seems to tell you how to create awesome apps with React but nobody explains how they work. This is why we not only thoroughly cover every React element but also explain the science behind it.</p>
+        <p id="paragraph-two">Learning React through this course would allow you to build interactive UIs effectively and will open up a lot of career opportunities. If you don’t take advantage of this opportunity, you’ll fall behind every other passionate web developer.</p>
+        <img id="background-IDE-mobile" src="./Final Files/Final Files/Assets/Images/IDE-img-mobile.png">
+      </div>
+      </section>
+      <section>
+        <div id="box-two">
+          <h1 id="coding-bootcamp-title">This Coding Bootcamp Course is Perfect for…</h1>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png"> 
+          <p id="paragraph-three">Students who want to learn an in-demand skill that is highly valuable to employers</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-three">Beginners who want to learn more about the popular javascript library that powers popular platforms like Netflix and Facebook</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-three">Experienced web developers trying to enhance their skills further and look for better opportunities such as front end developer jobs</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-three">Front-end developers that design web and mobile applications and become much more productive and efficient.</p>
+          <img id="guywithbeardandlaptop" src="./Final Files/Final Files/Assets/Images/image-mobile.png">
+        </div>
+      </section>
+      <section>
+        <div id="react-course-background">
+          <h1 id="react-course-background-title">Who can opt for [name here] React Course?</h1>
+          <p id="paragraph-four-title">The course will be physically taken at our center in [Address] - Brussels, Belgium. We believe that students learn their best when they’re connected with other aspiring web developers. This will also allow you to meet new people, discover opportunities and share ideas.</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-four">If you're skeptical about taking this course. Know that this course assumes you’re a total beginner, so you’ll be learning everything from scratch. You just have to desire to learn the same, and we bring your creative juices in flow with our high-end activities and learning concepts that we impart.</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-four">Our introductory classes would give you a general idea of React and Javascript, and from there we’ll jump into explaining each concept in full detail, step-by-step.</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-four">We also cover quite critical behind-the-scenes tips and tricks that you won't witness prevailing in the market otherwise. These hacks trim your learning curve and shift you to the next level of professionalism.</p>
+        </div>
+      </section>
+      <section>
+        <div id="Breakthrough-course-background">
+          <h1 id="Breakthrough-course-background-title">Let's Have A Breakthrough Of The Course</h1>
+          <p id="paragraph-five-title">This React course will guide you through all important React concepts like React classes, props, forms, hooks, and so much learning material. Our experienced instructor(s) will walk you through projects clearly guiding you along the way.</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">A quick refresh on Javascript to catch you up to speed</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">A comprehensive introduction to React and how to start it up</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">An explanation of how React works, its components, and how to design beautiful UIs with it</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">Understanding of React classes, props, events, and conditions</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">Build powerful, dynamic, and user-friendly apps with React</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">Understand the science behind React</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">A detailed explanation of lists and forms with examples</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">Build custom tables with pagination and sorting features</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">A thorough guide on React hooks</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">How to use preset hooks</p>
+          <img id="green-checkbox-two" src="./Final Files/Final Files/Assets/Icons/Vector.png">
+          <p id="paragraph-five">How to build custom hooks</p>
+        </div>
+      </section>
+      <section>
+        <div id="Breakthrough-course-background-two">
+          <p id="paragraph-six">By buying and implementing what you learn from this course, you’ll have the skill set you need to become a front-end or React developer. You have all the necessary tools to start creating powerful, dynamic, and interactive applications with beautiful UIs.</p>
+          <p id="paragraph-six">Through the tons of examples discussed in this course, you’ll also be well on your way of creating your own professional portfolio by acing this full stack web development course. This will be the foundation of your career and will give you the much-needed confidence to apply for jobs and demand a decent salary.</p>
+        </div>
+      </section>
+      <section>
+        <h1 id="course-details-title">Course Details</h1>
+        <div id="box-three">
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">3 Days</h2>
+            <p id="course-details-bis">Duration</p>
+          </article>
+        </div>
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">All Skill Levels</h2>
+            <p id="course-details-bis">Skill Level</p>
+          </article>
+        </div>
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">[00:00] - [00:00]</h2>
+            <p id="course-details-bis">Timings</p>
+          </article>
+        </div>
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">Included</h2>
+            <p id="course-details-bis">Accommodation and Catering</p>
+          </article>
+        </div>
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">No Physical Location</h2>
+            <p id="course-details-bis">Digital</p>
+          </article>
+        </div>
+        <div id="course-details-tile">
+          <article id="course-details-box">
+            <h2 id="course-details">Yes</h2>
+            <p id="course-details-bis">Certification</p>
+          </article>
+        </div>
+      </div>
+        <div id="button-wrapper-three">
+          <button id="button-three">€2500</button>
+        </div>
+        <p id="course-details-bis-two">Sign up for 1-1 React Developer Sessions before the slots end!</p>
+        <div id="button-wrapper-four">
+          <button id="button-four">ENROLL NOW</button>
+        </div>
+      </section>
+      <section>
+        <div id="requirements-background">
+            <h1 id="requirements-title">Requirements from Attendants</h1>
+        <div id="box-four">
+        <article id="requirements-wrapper">
+          <p id="requirements-paragraph">Basic knowledge of HTML, CSS, and Javascript (although there is a quick revision of Javascript in the introductory classes)</p>
+        </article>
+        <article id="requirements-wrapper-two">
+          <p id="requirements-paragraph-two">That’s it! You don’t need any previous knowledge of React as this seemingly data science course Belgium goes through everything you need to know from SCRATCH.</p>
+          <p id="requirements-paragraph-two">We will transform you from a curious student to a React developer ready to confidently take on the world, apply for jobs, and start earning as soon as possible.</p>
+        </article>
+      </div>
+        </div>
+      </section>
+      <section>
+        <div id="requirements-background">
+          <h1 id="requirements-title">What Makes Us Exquisite?</h1>
+          <div id="box-five">
+        <article id="exquisite-wrapper">
+          <h2 id="exquisite-wrapper-title">We are Confident, Clear, and Sell without Fear</h2> 
+        </article>
+        <p id="exquisite-wrapper-paragraph">We firmly believe in value addition and authentic selling. We have developed our course after investing a great deal of professional expertise, skills, time, and capital. After development we have time-tested our solutions and monitored their performance. We managed to achieve the finest and the most high-performing version that won us continuous positive feedback from students. We are 100% confident in our exclusive course.</p>
+        <article id="exquisite-wrapper">
+          <h2 id="exquisite-wrapper-title">We Don't Disguise</h2>
+        </article>
+        <p id="exquisite-wrapper-paragraph">We are upfront in our dealings and clearly narrate who is our target market. We serve those we should ideally be catering to. We share a heartfelt connection with the student aspirants. Therefore, we deeply study their pain points that keep them awake at night. Only then, we devise potent solutions that have guaranteed results, without costing them a dime.</p>
+      </div>  
+      </div>
+      </section>
+      <section>
+        <h1 id="certified-coding-title">Get Certified with Coding Course Brussels</h1>
+        <p id="certified-coding-paragraph">This course includes an exam and a [course name] certification on completion of the exam with minimum passing marks. The criterion for passing the exam is a score of 50% or more. A certification would add credibility to your resume and make you much more valuable to employers.</p>
+        <p id="certified-coding-paragraph">During classes, you would be given notes and sample questions from your teachers that would help you in preparing for a good grade. You can find out more details about the exam here.</p>
+        <div>       
+        <h4 id="certified-coding-title-two">You have 2 choices right now!</h4>
+        </div> 
+        <p id="certified-coding-paragraph">If you're looking for an organised, proven system and roadmap to develop websites like a pro that bring you money, this is it.</p>
+        <div id="box-six">
+        <div id="certified-coding-wrapper">
+          <p id="certified-coding-wrapper-paragraph">You could continue being where you are now, and nothing would change in your life. We all know that if you keep doing the same thing, you'll get the same results</p>
+        </div>
+          <p id="certified-coding-paragraph-two">or</p>
+        <div id="certified-coding-wrapper">
+          <p id="certified-coding-wrapper-paragraph">You could take advantage of this student-focused course, learn to develop high-end websites, and start moving toward the success and freedom you’ve always dreamed of TODAY.</p>
+        </div>
+      </div>
+        <p id="certified-coding-paragraph-two">Where will you be a month from now? You can do this!</p>
+        <div id="button-wrapper-five">
+          <button id="button-five">SIGN UP FOR THE COURSE</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="box-seven">
+      <div id="contact-us-background">
+      <section>
+        <h1 id="contact-us-title">Contact Us</h1>
+        <p id="contact-us-paragraph">Our team would love to have a chat and clear up any doubts, confusion, or questions you have related to the 3-day course or exam/certification.</p>
+      </section>
+      <article>
+        <img
+          id="email-us-icon"
+          src="./Final Files/Final Files/Assets/Icons/email-icon.PNG"
+        />
+        <h3 id="contact-us-email">Email us</h3>
+        <h4 id="contact-us-email-contact">yourmail@yourbusiness.com</h4>
+      </article>
+      <article>
+        <img
+          id="email-us-icon"
+          src="./Final Files/Final Files/Assets/Icons/phone-us.PNG"
+        />
+        <h3 id="contact-us-email">Call us</h3>
+        <h4 id="contact-us-email-contact">+1 234 567 8900</h4>
+      </article>
+      <img id="ellipse" src="./Final Files/Final Files/Assets/Images/Ellipse 1746.png">
+    </div>
+  </div>
+    </footer>
+  </body>
+</html>
